@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.listeners"/>
+  </listeners>
+  <test thread-count="5" name="Verfy Title Test(failed)">
+    <classes>
+      <class name="Academy.VerifyTitle">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- Academy.VerifyTitle -->
+    </classes>
+  </test> <!-- Verfy Title Test(failed) -->
+  <test thread-count="5" name="Verify Navigation test(failed)">
+    <classes>
+      <class name="Academy.VerifyNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="basePageNavigation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.VerifyNavigationBar -->
+    </classes>
+  </test> <!-- Verify Navigation test(failed) -->
+  <test thread-count="5" name="Verify login test(failed)">
+    <classes>
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
+    </classes>
+  </test> <!-- Verify login test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
